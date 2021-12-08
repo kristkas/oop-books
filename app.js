@@ -5,6 +5,16 @@ const ls = new LS()
 const form = document.querySelector("#book-form")
 form.addEventListener("submit", addBook)
 
+document.addEventListener("DOMContentLoaded", getBooks)
+
+function getBooks(){
+    const books = ls.getData("books")
+    books.forEach(function (booksFromLs){
+        ui.addBook(booksFromLS)
+    })
+}
+
+
 function addBook(event){
     const title = ui.title.value
     const author = ui.author.value

@@ -1,7 +1,7 @@
 class LS{
     getData(key){
         let data
-        if(localStorage.getItem("key") === null){
+        if(localStorage.getItem(key) === null){
             data = []
         } else {
             data = JSON.parse(localStorage.getItem("key"))

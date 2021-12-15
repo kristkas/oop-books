@@ -18,12 +18,12 @@ class UI {
         let isbn = click.parentElement.previousElementSibling.textContent
         let author = click.parentElement.previousElementSibling.previousElementSibling.textContent
         let title = click.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.textContent
-        const book = new Book(title, author, isbn)
-        return book
+        const books = new Book(title, author, isbn)
+        return books
     }
 
     delBook(click){
-        if(confirm('Do you realy want to delete this book?')) {
+        if(confirm('Do you really want to delete this book?')) {
             click.parentElement.parentElement.remove()
             return true
         } else {

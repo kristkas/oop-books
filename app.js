@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", getBooks)
 const bookList = document.querySelector('#book-list')
 bookList.addEventListener('click', delBook)
 
-// book filter keyboard event
 const filter = document.querySelector("#filter")
 filter.addEventListener('keyup', filterBook)
 

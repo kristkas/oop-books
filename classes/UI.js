@@ -1,4 +1,4 @@
-class UI{
+class UI {
     constructor() {
         this.title = document.querySelector("#title")
         this.author = document.querySelector("#author")
@@ -7,9 +7,10 @@ class UI{
     }
     addBook(book){
         const tr = document.createElement("tr")
-        tr.innerHTML = `<td>$(book.title)</td>
-                        <td>$(book.author)</td>
-                        <td>$(book.isbn)</td>
+        tr.setAttribute('class', "book-row")
+        tr.innerHTML = `<td>${book.title}</td>
+                        <td>${book.author}</td>
+                        <td>${book.isbn}</td>
                         <td><a href="#">X</a></td>`
         this.bookList.appendChild(tr)
     }

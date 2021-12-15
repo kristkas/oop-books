@@ -31,7 +31,7 @@ function delBook(event){
 
 function getBooks(){
     const books = ls.getData("books")
-    books.forEach(function (booksFromLs){
+    books.forEach(function (booksFromLS){
         ui.addBook(booksFromLS)
     })
 }

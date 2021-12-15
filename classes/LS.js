@@ -4,7 +4,7 @@ class LS{
         if(localStorage.getItem(key) === null){
             data = []
         } else {
-            data = JSON.parse(localStorage.getItem("key"))
+            data = JSON.parse(localStorage.getItem(key))
         }
         return data
     }
